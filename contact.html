@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Metadados do documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>Contato</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script> <!-- Link para o arquivo JavaScript -->
+</head>
+<body>
+    <!-- Cabeçalho com o menu de navegação -->
+    <header>
+        <nav>
+            <button class="menu-toggle" aria-label="Abrir Menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre Mim</a></li>
+                <li><a href="education.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Conteúdo principal da página -->
+    <main class="content-wrapper">
+        <div class="content-container">
+            <!-- Título da seção principal -->
+            <h1>Contato</h1>
+            <!-- Bloco de informações de contato -->
+            <div class="contact-info">
+                <!-- Parágrafo com o email -->
+                <p class="email">Email: <a href="mailto:cleversongnd@gmail.com">cleversongnd@gmail.com</a></p>
+                <!-- Links para redes sociais -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/cleversonguandalin/" target="_blank">
+                        <img src="img/linkedin-icon.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="https://github.com/CleverGnd" target="_blank">
+                        <img src="img/github-icon.png" alt="GitHub" class="social-icon">
+                    </a>
+                </div>
+            </div>
+            <!-- Texto introdutório para o formulário de contato -->
+            <p class="contact-text">Caso preferir, você pode entrar em contato comigo através do formulário abaixo:</p>
+            <!-- Formulário de contato -->
+            <form action="#" method="post" class="contact-form">
+                <!-- Campo para o nome -->
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <!-- Campo para o email -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <!-- Campo para a mensagem -->
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <!-- Botão de envio do formulário -->
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <!-- Espaçamento extra para o rodapé -->
+    <div class="footer-spacer"></div>
+    </main>
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2024 - Portfólio Cleverson</p>
+    </footer>
+</body>
+</html>

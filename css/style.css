@@ -1,0 +1,390 @@
+/* Reset some default styles */
+* {
+  margin: 0; /* Remove todas as margens padrão */
+  padding: 0; /* Remove todos os espaçamentos padrão */
+  box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura e altura dos elementos */
+}
+
+/* General page style */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte para Arial */
+  line-height: 1.6; /* Define a altura da linha */
+  background-color: #f4f4f4; /* Define a cor de fundo da página */
+  color: #333; /* Define a cor do texto */
+}
+
+/* Header and navigation */
+header {
+  background-color: #333; /* Define a cor de fundo do cabeçalho */
+  color: #fff; /* Define a cor do texto do cabeçalho */
+  padding: 1rem 0; /* Adiciona espaçamento interno ao cabeçalho */
+  position: fixed; /* Torna o cabeçalho fixo */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+header nav ul {
+  list-style: none; /* Remove marcadores de lista */
+  display: flex; /* Utiliza layout flexível */
+  justify-content: center; /* Centraliza os itens do menu horizontalmente */
+}
+
+header nav ul li {
+  margin: 0 1rem; /* Adiciona espaçamento entre os itens do menu */
+}
+
+header nav ul li a {
+  color: #fff; /* Define a cor dos links do menu */
+  text-decoration: none; /* Remove sublinhado dos links */
+}
+
+/* Estilos para a navegação */
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Menu hambúrguer para dispositivos móveis */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Estilos de navegação */
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block; /* Exibe o botão de menu hambúrguer */
+  }
+
+  .nav-links {
+      display: none; /* Esconde os links de navegação por padrão */
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      z-index: 999;
+  }
+
+  .nav-links.show {
+      display: flex; /* Exibe os links de navegação quando o menu está aberto */
+  }
+
+  header nav ul li {
+      margin: 1rem 0; /* Ajusta a margem entre os itens de navegação */
+  }
+}
+
+/* Adiciona um espaçamento superior ao conteúdo principal para compensar o cabeçalho fixo */
+.content-wrapper {
+  padding-top: 5rem;
+}
+
+/* Main content */
+main {
+  padding: 2rem; /* Adiciona espaçamento interno ao conteúdo principal */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para os parágrafos na página "Sobre Mim" */
+main p {
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 1rem; /* Adiciona margem inferior */
+  line-height: 1.5; /* Aumenta a altura da linha para melhor legibilidade */
+}
+
+/* Estilo para o contêiner de conteúdo */
+.content-container {
+  max-width: 800px; /* Define a largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+  padding: 1rem; /* Adiciona espaçamento interno */
+}
+
+/* Profile section */
+.profile {
+  display: flex; /* Utiliza layout flexível */
+  align-items: center; /* Alinha os itens ao centro verticalmente */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  margin-top: 2rem; /* Adiciona margem superior */
+}
+
+.profile img {
+  width: 150px; /* Define a largura da imagem */
+  height: 150px; /* Define a altura da imagem */
+  border-radius: 50%; /* Faz a imagem ser circular */
+  object-fit: cover; /* Garante que a imagem cubra completamente o elemento */
+  margin-right: 2rem; /* Adiciona margem à direita da imagem */
+}
+
+.profile-text {
+  max-width: 600px; /* Define a largura máxima do texto do perfil */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.profile-text h2 {
+  font-size: 1.8rem; /* Define o tamanho da fonte do título */
+  margin-bottom: 1rem; /* Adiciona margem inferior */
+}
+
+.profile-text p {
+  font-size: 1rem; /* Define o tamanho da fonte do parágrafo */
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #333; /* Define a cor de fundo do rodapé */
+  color: #fff; /* Define a cor do texto do rodapé */
+  text-align: center; /* Centraliza o texto */
+  padding: 1rem 0; /* Adiciona espaçamento interno ao rodapé */
+  position: fixed; /* Fixa o rodapé na parte inferior da página */
+  bottom: 0; /* Define a posição do rodapé na parte inferior */
+  width: 100%; /* Faz o rodapé ocupar toda a largura da página */
+}
+
+/* Education section */
+.education-item {
+  display: flex; /* Utiliza layout flexível */
+  align-items: center; /* Alinha os itens ao centro verticalmente */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  background-color: #fff; /* Define a cor de fundo do item de educação */
+  padding: 1rem; /* Adiciona espaçamento interno */
+  margin-bottom: 1rem; /* Adiciona margem inferior */
+  border-radius: 8px; /* Adiciona cantos arredondados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do item */
+}
+
+.education-item .logo {
+  width: 50px; /* Define a largura da logo */
+  height: 50px; /* Define a altura da logo */
+  margin-right: 1rem; /* Adiciona margem à direita da logo */
+  border-radius: 50%; /* Faz a logo ser circular */
+  object-fit: cover; /* Garante que a logo cubra completamente o elemento */
+}
+
+.education-details {
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.education-details h2 {
+  font-size: 1.2rem; /* Define o tamanho da fonte do título */
+  margin-bottom: 0.5rem; /* Adiciona margem inferior */
+}
+
+.education-details p {
+  margin-bottom: 0.3rem; /* Adiciona margem inferior */
+}
+
+/* Portfolio section */
+/* Portfolio grid */
+.portfolio-grid {
+  display: flex; /* Utiliza layout flexível */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  justify-content: center; /* Centraliza os itens */
+  gap: 2rem; /* Adiciona espaçamento entre os itens */
+}
+
+.project-item {
+  display: flex; /* Utiliza layout flexível */
+  align-items: center; /* Alinha os itens ao centro verticalmente */
+  justify-content: center; /* Centraliza os itens */
+  background-color: #fff; /* Define a cor de fundo do item de projeto */
+  padding: 1rem; /* Adiciona espaçamento interno */
+  width: calc(50% - 2rem); /* Define a largura do item, subtraindo o espaçamento */
+  border-radius: 8px; /* Adiciona cantos arredondados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do item */
+}
+
+.project-item .project-logo {
+  width: 50px; /* Define a largura da logo do projeto */
+  height: 50px; /* Define a altura da logo do projeto */
+  margin-right: 1rem; /* Adiciona margem à direita da logo */
+  border-radius: 50%; /* Faz a logo ser circular */
+  object-fit: cover; /* Garante que a logo cubra completamente o elemento */
+}
+
+.project-details {
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.project-details h2 {
+  font-size: 1.2rem; /* Define o tamanho da fonte do título */
+  margin-bottom: 0.5rem; /* Adiciona margem inferior */
+}
+
+.project-details p {
+  margin-bottom: 0.3rem; /* Adiciona margem inferior */
+}
+
+.project-details a {
+  color: #007BFF; /* Define a cor dos links */
+  text-decoration: none; /* Remove sublinhado dos links */
+}
+
+.project-details a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Future projects block */
+.future-projects {
+  flex-direction: column; /* Organiza os itens em coluna */
+  align-items: flex-start; /* Alinha os itens ao início do contêiner */
+}
+
+.future-projects .project-details {
+  text-align: center; /* Centraliza o texto */
+}
+
+/* GitHub callout */
+.github-callout {
+  margin-top: 2rem; /* Adiciona margem superior */
+  text-align: center; /* Centraliza o texto */
+}
+
+.github-callout a {
+  display: inline-flex; /* Exibe o link como um contêiner flexível */
+  align-items: center; /* Alinha os itens ao centro verticalmente */
+  color: #333; /* Define a cor do link */
+  text-decoration: none; /* Remove sublinhado dos links */
+  font-size: 1.2rem; /* Define o tamanho da fonte */
+  font-weight: bold; /* Define o peso da fonte */
+}
+
+.github-callout a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.github-icon {
+  width: 32px; /* Define a largura do ícone do GitHub */
+  height: 32px; /* Define a altura do ícone do GitHub */
+  margin-right: 0.5rem; /* Adiciona margem à direita do ícone */
+}
+
+/* Contact section */
+.contact-info,
+.contact-form {
+    max-width: 500px; /* Define a largura máxima do contêiner */
+    margin: 1rem auto; /* Adiciona margem e centraliza horizontalmente */
+    background-color: #fff; /* Define a cor de fundo do contêiner */
+    padding: 1.5rem; /* Adiciona espaçamento interno */
+    border-radius: 8px; /* Adiciona cantos arredondados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do contêiner */
+}
+
+.contact-info .email {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 1rem; /* Adiciona margem inferior */
+}
+
+.contact-info .social-links {
+    display: flex; /* Utiliza layout flexível */
+    justify-content: center; /* Centraliza os itens */
+    gap: 1rem; /* Adiciona espaçamento entre os itens */
+    margin-top: 0.5rem; /* Adiciona margem superior */
+}
+
+.social-links a {
+    display: inline-block; /* Exibe o link como um bloco em linha */
+}
+
+.social-icon {
+    width: 4rem; /* Define a largura do ícone social */
+    height: 4rem; /* Define a altura do ícone social */
+}
+
+.contact-text {
+    max-width: 500px; /* Define a largura máxima do texto */
+    margin: 1rem auto; /* Adiciona margem e centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+.form-group {
+    margin-bottom: 1rem; /* Adiciona margem inferior */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.form-group label {
+    display: block; /* Exibe o rótulo como um bloco */
+    margin-bottom: 0.5rem; /* Adiciona margem inferior */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Define a largura dos campos de entrada */
+    padding: 0.5rem; /* Adiciona espaçamento interno */
+    border: 1px solid #ccc; /* Define a borda dos campos de entrada */
+    border-radius: 4px; /* Adiciona cantos arredondados */
+    font-size: 1rem; /* Define o tamanho da fonte */
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+button[type="submit"] {
+    background-color: #007BFF; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    padding: 0.75rem 1.5rem; /* Adiciona espaçamento interno */
+    border-radius: 4px; /* Adiciona cantos arredondados */
+    cursor: pointer; /* Define o cursor como ponteiro */
+    font-size: 1rem; /* Define o tamanho da fonte */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Define a cor de fundo ao passar o mouse */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Define a cor de fundo do rodapé */
+    color: #fff; /* Define a cor do texto do rodapé */
+    text-align: center; /* Centraliza o texto */
+    padding: 1rem 0; /* Adiciona espaçamento interno */
+    position: fixed; /* Fixa o rodapé na parte inferior da página */
+    bottom: 0; /* Define a posição do rodapé na parte inferior */
+    width: 100%; /* Faz o rodapé ocupar toda a largura da página */
+}
+
+/* Espaçamento para evitar que o conteúdo fique escondido atrás do rodapé */
+.footer-spacer {
+  margin-bottom: 2rem; /* Ajuste o valor conforme necessário */
+}
